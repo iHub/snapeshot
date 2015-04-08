@@ -11,7 +11,7 @@ drv <-dbDriver('SQLite')
 con = dbConnect(drv,'twitter.sqlite')
 
 # extract tweets from database
-GetText <- function(keyword, number, db.table='makaburi') {
+GetText <- function(keyword, number, db.table='tweet_data') {
   # fetch text column from a db query result
     
   sql <-paste("SELECT * FROM ",db.table," WHERE [text] like '%",keyword,"%' LIMIT ", number,"", sep="")
