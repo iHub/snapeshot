@@ -6,10 +6,6 @@ Version   : v1.0
 License   : Apache License, Version 2.0
 '
 
-# create driver and connection to SQLite database
-drv <-dbDriver('SQLite')
-con = dbConnect(drv,'twitter.sqlite')
-
 # extract tweets from database
 GetText <- function(keyword, number, db.table='tweet_data') {
   # fetch text column from a db query result
