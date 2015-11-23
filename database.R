@@ -17,11 +17,11 @@ GetText <- function(keyword, number, db.table='tweet_data') {
 
 # create temporary table
 CreateTempTable <- function(data, table.name='intermediate', conn=db.conn) {
-  if(dbExistsTable(conn, table.name)) {
+  'if(dbExistsTable(conn, table.name)) {
     dbRemoveTable(conn, table.name)
-  } else {
+  } else {'
     dbWriteTable(conn, table.name, data)
-  }
+  #}
   
   return(table.name)
 }
