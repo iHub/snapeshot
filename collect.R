@@ -7,11 +7,6 @@ Version   : v1.0
 License   : Apache License, Version 2.0
 '
 #============================= Collect Tweets =============================================================================
-# Load Required Libraries
-library(streamR)
-library(twitteR)
-library(RSQLite)
-
 # Load Authentication File
 load("twitteR_credentials")
 
